@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600" prefWidth="800" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.condo.controllers.officerControllers.officerMainController.OfficerShowItemOutController">
+    <children>
+      <ImageView fitHeight="343.0" fitWidth="750.0" layoutX="191.0" layoutY="262.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../IconAndLogo/etcImage/fadeC.png" />
+         </image>
+      </ImageView>
+        <Pane fx:id="menuPane" prefHeight="600.0" prefWidth="191.0" styleClass="menuPane">
+            <children>
+                <ImageView fx:id="imageProfile" fitHeight="39.0" fitWidth="49.0" layoutX="33.0" layoutY="59.0" pickOnBounds="true" preserveRatio="true" />
+                <Button fx:id="homeBtn" layoutX="72.0" mnemonicParsing="false" onAction="#handleHomeBtnOnAction" prefHeight="45.0" prefWidth="118.0" styleClass="homeBtn">
+                    <graphic>
+                        <ImageView fx:id="logoImage" fitHeight="36.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true" />
+                    </graphic>
+                </Button>
+                <VBox layoutY="117.0" prefHeight="488.0" prefWidth="191.0" styleClass="vbox">
+                    <children>
+                        <Button fx:id="officerHomeBtn" alignment="CENTER_RIGHT" mnemonicParsing="false" onAction="#handleOfficerHomeBtnOnAction" prefHeight="54.0" prefWidth="191.0" styleClass="menuBtn" text="หน้าหลัก Officer" textFill="WHITE">
+                            <font>
+                                <Font name="Calibri" size="16.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="showRoomBtn" alignment="CENTER_RIGHT" mnemonicParsing="false" onAction="#handleShowRoomBtnOnAction" prefHeight="54.0" prefWidth="191.0" styleClass="menuBtn" text="แสดงห้องพัก" textFill="WHITE">
+                            <font>
+                                <Font name="Calibri" size="16.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="showItemBtn" alignment="CENTER_RIGHT" layoutX="10.0" layoutY="172.0" mnemonicParsing="false" onAction="#handleShowItemBtnOnAction" prefHeight="54.0" prefWidth="191.0" styleClass="menuBtn" text="แสดงข้อมูลสิ่งของ" textFill="WHITE">
+                            <font>
+                                <Font name="Calibri" size="16.0" />
+                            </font>
+                        </Button>
+                        <Button alignment="CENTER_RIGHT" mnemonicParsing="false" prefHeight="54.0" prefWidth="191.0" styleClass="officerWorkBtn" text="สิ่งของที่นำออกไปแล้ว" textFill="WHITE">
+                            <font>
+                                <Font name="Calibri" size="16.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="rePassBtn" alignment="CENTER_RIGHT" layoutX="10.0" layoutY="226.0" mnemonicParsing="false" onAction="#handleRePassBtnOnAction" prefHeight="54.0" prefWidth="191.0" styleClass="menuBtn" text="เปลี่ยนรหัสผ่าน" textFill="WHITE">
+                            <font>
+                                <Font name="Calibri" size="16.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="logoutBtn" alignment="CENTER_RIGHT" layoutX="10.0" layoutY="280.0" mnemonicParsing="false" onAction="#handleLogOutBtnOnAction" prefHeight="54.0" prefWidth="191.0" styleClass="menuBtn" text="ออกจากระบบ" textFill="WHITE">
+                            <font>
+                                <Font name="Calibri" size="16.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </VBox>
+                <Label fx:id="usernameLabel" layoutX="84.0" layoutY="65.0" textFill="WHITE">
+                    <font>
+                        <Font name="Calibri Bold" size="17.0" />
+                    </font>
+                </Label>
+                <Button fx:id="menuBtn2" mnemonicParsing="false" onAction="#handleMenuBtn2OnAction" prefHeight="36.0" prefWidth="52.0" styleClass="homeBtn">
+                    <graphic>
+                        <ImageView fx:id="menuImage2" fitHeight="46.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true" />
+                    </graphic>
+                </Button>
+            </children>
+        </Pane>
+        <TableView fx:id="itemTable" layoutX="205.0" layoutY="77.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="508.0" prefWidth="572.0">
+            <columns>
+                <TableColumn fx:id="buildingCol" editable="false" prefWidth="57.0" resizable="false" text="อาคาร" />
+                <TableColumn fx:id="floorCol" editable="false" prefWidth="68.0" resizable="false" sortable="false" text="ชั้น" />
+                <TableColumn fx:id="roomNumCol" editable="false" prefWidth="105.0" resizable="false" text="เลขที่ห้อง" />
+                <TableColumn fx:id="receiverCol" editable="false" prefWidth="211.0" resizable="false" sortable="false" text="ผู้รับ" />
+                <TableColumn fx:id="senderCol" editable="false" prefWidth="211.0" resizable="false" sortable="false" text="ผู้ส่ง" />
+                <TableColumn fx:id="typeCol" editable="false" minWidth="0.0" prefWidth="134.0" resizable="false" sortable="false" text="ประเภท" />
+                <TableColumn fx:id="dateTimeOutCol" editable="false" prefWidth="243.0" resizable="false" text="วันเวลา-ที่ของออก" />
+                <TableColumn fx:id="officerOutCol" editable="false" prefWidth="289.0" resizable="false" sortable="false" text="เจ้าหน้าที่ผู้ดูแลการออกของ" />
+            <TableColumn fx:id="residentOutCol" editable="false" prefWidth="289.0" resizable="false" sortable="false" text="ลูกบ้านที่รับของออก" />
+            </columns>
+        </TableView>
+        <Label layoutX="529.0" layoutY="33.0" styleClass="text2" text="เลขที่ห้อง : " textFill="#bd9b76">
+            <font>
+                <Font name="Calibri Bold" size="18.0" />
+            </font>
+        </Label>
+        <TextField fx:id="roomNumFilterField" layoutX="624.0" layoutY="28.0" prefHeight="31.0" prefWidth="154.0">
+            <font>
+                <Font name="Calibri" size="15.0" />
+            </font>
+        </TextField>
+      <Label layoutX="211.0" layoutY="33.0" styleClass="text2" text="แสดงของที่นำออกไปแล้ว" textFill="#bd9b76">
+         <font>
+            <Font name="Calibri Bold" size="24.0" />
+         </font>
+      </Label>
+        <Pane fx:id="workPane" prefHeight="605.0" prefWidth="191.0" styleClass="vbox">
+            <children>
+                <Button fx:id="fullInfoBtn" layoutX="26.0" layoutY="364.0" mnemonicParsing="false" onAction="#handleFullInfoBtnOnAction" prefHeight="46.0" prefWidth="139.0" styleClass="showBtn" text="ดูข้อมูล" textFill="WHITE">
+                    <font>
+                        <Font name="Calibri Bold" size="22.0" />
+                    </font>
+                </Button>
+                <ImageView fx:id="itemImage" fitHeight="127.0" fitWidth="128.0" layoutX="31.0" layoutY="101.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../IconAndLogo/etcImage/1872739.png" />
+                    </image>
+                </ImageView>
+                <Label fx:id="topicNameLabel" layoutX="26.0" layoutY="255.0" text="ผู้รับ:" textFill="WHITE">
+                    <font>
+                        <Font name="Calibri Bold" size="17.0" />
+                    </font>
+                </Label>
+                <Label fx:id="receiverLabel" layoutX="24.0" layoutY="292.0" prefHeight="21.0" prefWidth="146.0" textFill="WHITE">
+                    <font>
+                        <Font name="Calibri Bold" size="17.0" />
+                    </font>
+                </Label>
+                <Button fx:id="menuBtn" mnemonicParsing="false" onAction="#handleMenuBtnOnAction" prefHeight="36.0" prefWidth="52.0" styleClass="homeBtn">
+                    <graphic>
+                        <ImageView fx:id="menuImage1" fitHeight="46.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true" />
+                    </graphic>
+                </Button>
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600" prefWidth="800" styleClass="homePane" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.condo.controllers.etcController.HomeController">
+   <children>
+      <Pane fx:id="pane1" layoutX="235.0" layoutY="-329.0" prefHeight="655.0" prefWidth="261.0" rotate="135.0" style="-fx-background-radius: 100 100 100 100; -fx-background-color: #FFFFFF;" />
+      <Pane fx:id="pane2" layoutX="248.0" layoutY="259.0" prefHeight="655.0" prefWidth="261.0" rotate="135.0" style="-fx-background-radius: 100 100 100 100; -fx-background-color: #9C2344;" />
+      <Button fx:id="residentBtn" alignment="CENTER" contentDisplay="TOP" layoutX="33.0" layoutY="77.0" mnemonicParsing="false" onAction="#handleResidentBtnOnAction" prefHeight="491.0" prefWidth="402.0" text="Resident" textFill="WHITE">
+         <font>
+            <Font name="Bell MT Bold" size="41.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../IconAndLogo/etcImage/residentIcon.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="officerBtn" alignment="CENTER" contentDisplay="TOP" layoutX="460.0" layoutY="79.0" mnemonicParsing="false" onAction="#handleOfficerBtnOnAction" prefHeight="388.0" prefWidth="306.0" text="Officer" textFill="WHITE">
+         <font>
+            <Font name="Bell MT Bold" size="34.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../IconAndLogo/classic/officer.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="adminBtn" layoutX="460.0" layoutY="492.0" mnemonicParsing="false" onAction="#handleAdminBtnOnAction" prefHeight="80.0" prefWidth="306.0" text="  Admin" textFill="WHITE">
+         <font>
+            <Font name="Bell MT Bold" size="26.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="52.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../IconAndLogo/etcImage/admin.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <ImageView fx:id="logoImage" fitHeight="52.0" fitWidth="87.0" layoutX="713.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../IconAndLogo/classic/Logo.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="informationBtn" mnemonicParsing="false" onAction="#handleInformationBtnOnAction" prefHeight="49.0" prefWidth="45.0" styleClass="homeBtn">
+         <graphic>
+            <ImageView fx:id="infoImage" fitHeight="38.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true" />
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

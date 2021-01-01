@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" styleClass="vbox" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.condo.controllers.etcController.InformationAndSettingController">
+   <children>
+      <Button fx:id="backBtn" mnemonicParsing="false" onAction="#handleBackBtnOnAction" prefHeight="56.0" prefWidth="61.0" styleClass="homeBtn">
+         <graphic>
+            <ImageView fx:id="backImage" fitHeight="44.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true" />
+         </graphic>
+      </Button>
+      <ImageView fitHeight="235.0" fitWidth="233.0" layoutX="61.0" layoutY="98.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../IconAndLogo/etcImage/6210400175.jpg" />
+         </image>
+      </ImageView>
+      <Separator layoutX="360.0" layoutY="65.0" orientation="VERTICAL" prefHeight="456.0" prefWidth="40.0" />
+      <Label layoutX="61.0" layoutY="360.0" text="Wongsakorn Pinvasee (Sun)" textFill="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="61.0" layoutY="399.0" text="6210400175" textFill="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="25.0" />
+         </font>
+      </Label>
+      <Separator layoutX="62.0" layoutY="460.0" prefHeight="0.0" prefWidth="290.0" />
+      <Label layoutX="61.0" layoutY="483.0" text="Theme :" textFill="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="21.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="themesCombo" layoutX="144.0" layoutY="481.0" prefHeight="31.0" prefWidth="143.0" promptText="abstract" style="-fx-background-color: linear-gradient(to bottom right, #F5CC3B, #EF811A);" />
+      <Label layoutX="409.0" layoutY="65.0" text="ข้อมูลการใช้งาน" textFill="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="25.0" />
+         </font>
+      </Label>
+      <Button fx:id="okBtn" layoutX="294.0" layoutY="481.0" mnemonicParsing="false" onAction="#handleOkBtnOnAction" prefHeight="30.0" prefWidth="48.0" styleClass="confirmButton" text="ok" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <TextArea editable="false" layoutX="409.0" layoutY="111.0" prefHeight="410.0" prefWidth="374.0" text="1. เลือก login ตามประเภท account ที่ต้องการจะ &#10;     login&#10;&#10;           หมายเหตุ: ประเภท account และ หน้า login &#10;           ต้องมีประเภทเดียวกันถึงจะ login ได้ &#10;&#10;2.  เมื่อเข้าไปในหน้าการทำงานของ account แล้ว &#10;     สามารถเลือกหน้าที่ต้องได้ผ่าน menu ทาง&#10;     ซ้ายมือ&#10;    &#10;3.  การ แก้ไขข้อมูลผ่านตัวโปรแกรมจะมีการ&#10;     บันทึกไว้&#10;&#10;4. สามารถศึกษาเพิ่มเติ่มได้ที่ คู่มือการใช้งาน&#10;">
+         <font>
+            <Font name="Calibri Bold" size="17.0" />
+         </font>
+      </TextArea>
+      <Button fx:id="howToBtn" layoutX="408.0" layoutY="539.0" mnemonicParsing="false" onAction="#handleHowToBtnOnAction" prefHeight="40.0" prefWidth="374.0" styleClass="btn1" text="คู่มือการใช้งาน" textFill="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="21.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800" styleClass="smallPane" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.condo.controllers.officerControllers.officerSubController.OfficerAddPackageController">
+    <children>
+      <ImageView fitHeight="215.0" fitWidth="1072.0" layoutX="-2.0" layoutY="385.0" opacity="0.57" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../IconAndLogo/etcImage/longBuilding.png" />
+         </image>
+      </ImageView>
+        <Label layoutX="266.0" layoutY="105.0" styleClass="text1" text="ผู้รับ : " textFill="YELLOW">
+            <font>
+                <Font name="Calibri Bold" size="19.0" />
+            </font>
+        </Label>
+        <Label layoutX="251.0" layoutY="307.0" styleClass="text1" text="เลขที่ห้อง :" textFill="YELLOW">
+            <font>
+                <Font name="Calibri Bold" size="19.0" />
+            </font>
+        </Label>
+        <Label layoutX="254.0" layoutY="196.0" styleClass="text1" text="อาคาร :" textFill="YELLOW">
+            <font>
+                <Font name="Calibri Bold" size="19.0" />
+            </font>
+        </Label>
+        <Button fx:id="okBtn" layoutX="663.0" layoutY="424.0" mnemonicParsing="false" onAction="#handleOkBtnOnAction" prefHeight="58.0" prefWidth="95.0" styleClass="btn1" text="ตกลง" textFill="WHITE">
+            <font>
+                <Font name="Calibri Bold" size="19.0" />
+            </font>
+        </Button>
+        <Button fx:id="backBtn" mnemonicParsing="false" onAction="#handleBackBtnOnAction" prefHeight="58.0" prefWidth="59.0" styleClass="homeBtn">
+            <graphic>
+                <ImageView fx:id="backImage" fitHeight="31.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true" />
+            </graphic>
+        </Button>
+        <Label layoutX="333.0" layoutY="14.0" styleClass="text1" text="กรอกข้อมูลพัสดุ" textFill="YELLOW">
+            <font>
+                <Font name="Calibri Bold" size="42.0" />
+            </font>
+        </Label>
+        <Label layoutX="231.0" layoutY="364.0" styleClass="text1" text="ขนาด :" textFill="YELLOW">
+            <font>
+                <Font name="Calibri Bold" size="19.0" />
+            </font>
+        </Label>
+        <TextField fx:id="receiverField" layoutX="263.0" layoutY="136.0" prefHeight="31.0" prefWidth="219.0">
+         <font>
+            <Font name="Calibri" size="17.0" />
+         </font></TextField>
+        <TextField fx:id="buildingField" layoutX="326.0" layoutY="195.0" prefHeight="31.0" prefWidth="153.0">
+         <font>
+            <Font name="Calibri" size="17.0" />
+         </font></TextField>
+        <TextField fx:id="roomNumField" layoutX="345.0" layoutY="306.0" prefHeight="31.0" prefWidth="131.0">
+         <font>
+            <Font name="Calibri" size="17.0" />
+         </font></TextField>
+        <Label layoutX="523.0" layoutY="94.0" styleClass="text1" text="ผู้ส่ง : " textFill="YELLOW">
+            <font>
+                <Font name="Calibri Bold" size="19.0" />
+            </font>
+        </Label>
+        <TextField fx:id="senderField" layoutX="523.0" layoutY="129.0" prefHeight="31.0" prefWidth="246.0">
+         <font>
+            <Font name="Calibri" size="17.0" />
+         </font></TextField>
+        <Pane layoutX="496.0" layoutY="100.0" prefHeight="311.0" prefWidth="5.0" styleClass="partitionPane" />
+      <Label layoutX="522.0" layoutY="174.0" styleClass="text1" text="บริการพัสดุ :" textFill="YELLOW">
+         <font>
+            <Font name="Calibri Bold" size="19.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="postOfficeCombo" layoutX="523.0" layoutY="212.0" prefHeight="31.0" prefWidth="246.0" />
+      <Label layoutX="523.0" layoutY="255.0" styleClass="text1" text="Tracking Number :" textFill="YELLOW">
+         <font>
+            <Font name="Calibri Bold" size="19.0" />
+         </font>
+      </Label>
+      <TextField fx:id="trackNumField" layoutX="524.0" layoutY="294.0" prefHeight="31.0" prefWidth="246.0">
+         <font>
+            <Font name="Calibri" size="17.0" />
+         </font></TextField>
+      <ComboBox fx:id="sizeCombo" layoutX="296.0" layoutY="362.0" prefHeight="31.0" prefWidth="181.0" />
+      <ImageView fx:id="imagePic" fitHeight="154.0" fitWidth="164.0" layoutX="42.0" layoutY="150.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../IconAndLogo/etcImage/1872739.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="523.0" layoutY="363.0" styleClass="text1" text="รูป : " textFill="YELLOW">
+         <font>
+            <Font name="Calibri Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="imagePathLabel" layoutX="565.0" layoutY="362.0" prefHeight="31.0" prefWidth="64.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #BABABA; -fx-border-radius: 3 3 3 3; -fx-background-radius: 3 3 3 3;">
+         <font>
+            <Font name="Calibri" size="15.0" />
+         </font></Label>
+      <Button fx:id="browseBtn" layoutX="641.0" layoutY="362.0" mnemonicParsing="false" onAction="#handleBrowseBtnOnAction" prefHeight="31.0" prefWidth="88.0" text="browse">
+         <font>
+            <Font name="Calibri" size="15.0" />
+         </font></Button>
+      <Label layoutX="261.0" layoutY="249.0" styleClass="text1" text="ชั้น :" textFill="YELLOW">
+         <font>
+            <Font name="Calibri Bold" size="19.0" />
+         </font>
+      </Label>
+      <TextField fx:id="floorField" layoutX="308.0" layoutY="248.0" prefHeight="31.0" prefWidth="167.0">
+         <font>
+            <Font name="Calibri" size="17.0" />
+         </font></TextField>
+      <Label fx:id="alertLabel" layoutX="311.0" layoutY="433.0" prefHeight="21.0" prefWidth="334.0" textFill="RED">
+         <font>
+            <Font name="Calibri Bold Italic" size="18.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

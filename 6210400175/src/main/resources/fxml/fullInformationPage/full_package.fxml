@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="596.0" prefWidth="900.0" styleClass="smallPane" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.condo.controllers.fullInformationController.FullPackageController">
+    <children>
+        <Label layoutX="247.0" layoutY="31.0" styleClass="text1" text="ผู้รับ : " textFill="#f5cc3b">
+            <font>
+                <Font name="Calibri Bold" size="19.0" />
+            </font>
+        </Label>
+        <Label layoutX="247.0" layoutY="151.0" styleClass="text1" text="เลขที่ห้อง :" textFill="#f5cc3b">
+            <font>
+                <Font name="Calibri Bold" size="19.0" />
+            </font>
+        </Label>
+        <Label layoutX="247.0" layoutY="115.0" styleClass="text1" text="อาคาร :" textFill="#f5cc3b">
+            <font>
+                <Font name="Calibri Bold" size="19.0" />
+            </font>
+        </Label>
+        <Label layoutX="13.0" layoutY="8.0" styleClass="text1" text="ข้อมูลพัสดุ" textFill="#f5cc3b">
+            <font>
+                <Font name="Calibri Bold" size="42.0" />
+            </font>
+        </Label>
+        <Label layoutX="247.0" layoutY="188.0" styleClass="text1" text="ขนาด :" textFill="#f5cc3b">
+            <font>
+                <Font name="Calibri Bold" size="19.0" />
+            </font>
+        </Label>
+        <Label layoutX="247.0" layoutY="240.0" styleClass="text1" text="ผู้ส่ง : " textFill="#f5cc3b">
+            <font>
+                <Font name="Calibri Bold" size="19.0" />
+            </font>
+        </Label>
+        <ImageView fx:id="imageView" fitHeight="172.0" fitWidth="168.0" layoutX="26.0" layoutY="122.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../IconAndLogo/etcImage/1872739.png" />
+            </image>
+        </ImageView>
+        <Label layoutX="247.0" layoutY="323.0" styleClass="text1" text="ผู้ให้บริการ : " textFill="#f5cc3b">
+            <font>
+                <Font name="Calibri Bold" size="19.0" />
+            </font>
+        </Label>
+        <Label layoutX="523.0" layoutY="169.0" styleClass="text1" text="เจ้าหน้าที่รับ : " textFill="#f5cc3b">
+            <font>
+                <Font name="Calibri Bold" size="19.0" />
+            </font>
+        </Label>
+        <Label layoutX="523.0" layoutY="253.0" styleClass="text1" text="วัน-เวลาที่รับ : " textFill="#f5cc3b">
+            <font>
+                <Font name="Calibri Bold" size="19.0" />
+            </font>
+        </Label>
+        <Pane layoutX="510.0" layoutY="32.0" prefHeight="343.0" prefWidth="1.0" styleClass="partitionPane" />
+        <Label fx:id="receiverLabel" layoutX="247.0" layoutY="66.0" prefHeight="28.0" prefWidth="252.0" textFill="WHITE">
+            <font>
+                <Font name="Calibri" size="19.0" />
+            </font>
+        </Label>
+        <Label fx:id="buildingLabel" layoutX="329.0" layoutY="113.0" prefHeight="28.0" prefWidth="69.0" textFill="WHITE">
+            <font>
+                <Font name="Calibri" size="19.0" />
+            </font>
+        </Label>
+        <Label fx:id="roomNumLabel" layoutX="341.0" layoutY="149.0" prefHeight="28.0" prefWidth="87.0" textFill="WHITE">
+            <font>
+                <Font name="Calibri" size="19.0" />
+            </font>
+        </Label>
+        <Label fx:id="sizeLabel" layoutX="318.0" layoutY="186.0" prefHeight="28.0" prefWidth="179.0" textFill="WHITE">
+            <font>
+                <Font name="Calibri" size="19.0" />
+            </font>
+        </Label>
+        <Label fx:id="senderLabel" layoutX="247.0" layoutY="279.0" prefHeight="28.0" prefWidth="252.0" textFill="WHITE">
+            <font>
+                <Font name="Calibri" size="19.0" />
+            </font>
+        </Label>
+        <Label fx:id="postOfficeLabel" layoutX="360.0" layoutY="320.0" prefHeight="28.0" prefWidth="141.0" textFill="WHITE">
+            <font>
+                <Font name="Calibri" size="19.0" />
+            </font>
+        </Label>
+        <Label fx:id="officerGetLabel" layoutX="523.0" layoutY="211.0" prefHeight="28.0" prefWidth="355.0" textFill="WHITE">
+            <font>
+                <Font name="Calibri" size="19.0" />
+            </font>
+        </Label>
+        <Label fx:id="dateTimeLabel" layoutX="525.0" layoutY="289.0" prefHeight="28.0" prefWidth="333.0" textFill="WHITE">
+            <font>
+                <Font name="Calibri" size="19.0" />
+            </font>
+        </Label>
+      <Label layoutX="523.0" layoutY="115.0" styleClass="text1" text="สถานะ : " textFill="#f5cc3b">
+         <font>
+            <Font name="Calibri Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="statusLabel" layoutX="596.0" layoutY="113.0" prefHeight="28.0" prefWidth="252.0" textFill="WHITE">
+         <font>
+            <Font name="Calibri" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="523.0" layoutY="25.0" styleClass="text1" text="Tracking Number : " textFill="#f5cc3b">
+         <font>
+            <Font name="Calibri Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="trackNumLabel" layoutX="523.0" layoutY="66.0" prefHeight="28.0" prefWidth="369.0" textFill="WHITE">
+         <font>
+            <Font name="Calibri" size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="officerOutTopic" layoutX="58.0" layoutY="410.0" styleClass="text1" text="เจ้าหน้าที่ผู้ดูแลการออกของ : " textFill="#f5cc3b">
+         <font>
+            <Font name="Calibri Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="officerOutLabel" layoutX="62.0" layoutY="448.0" prefHeight="28.0" prefWidth="394.0" textFill="WHITE">
+         <font>
+            <Font name="Calibri" size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="residentOutTopic" layoutX="59.0" layoutY="496.0" styleClass="text1" text="ผู้ที่รับของออก : " textFill="#f5cc3b">
+         <font>
+            <Font name="Calibri Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="residentOutLabel" layoutX="63.0" layoutY="534.0" prefHeight="28.0" prefWidth="374.0" textFill="WHITE">
+         <font>
+            <Font name="Calibri" size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="dateTimeOutTopic" layoutX="508.0" layoutY="410.0" styleClass="text1" text="วันเวลา-ที่ของออก : " textFill="#f5cc3b">
+         <font>
+            <Font name="Calibri Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="dateTimeOutLabel" layoutX="512.0" layoutY="448.0" prefHeight="28.0" prefWidth="321.0" textFill="WHITE">
+         <font>
+            <Font name="Calibri" size="19.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

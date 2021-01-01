@@ -1,0 +1,245 @@
+/* light gold */
+.text1{
+    -fx-text-fill: rgb(189, 155, 118);
+}
+
+/* dark gold */
+.text2{
+    -fx-text-fill: rgb(171, 121, 36);
+}
+
+/* dark gray */
+.text3{
+    -fx-text-fill: rgb(48, 48, 48);
+}
+
+.text4{
+    -fx-text-fill: rgb(124, 108, 86);
+    -fx-font-family: "Bell MT Bold";
+    -fx-font-size: 64px;
+}
+
+.text5{
+    -fx-text-fill: rgb(189, 155, 118);
+}
+
+.text6{
+    -fx-text-fill: rgb(189, 155, 118);
+    -fx-font-family: "Bell MT Bold";
+    -fx-font-size:  26px;
+}
+
+.text7{
+    -fx-text-fill: rgb(189, 155, 118);
+    -fx-font-family: "Bell MT Bold";
+    -fx-font-size:  46px;
+}
+
+.whiteText{
+    -fx-text-fill: rgb(255, 255, 255);
+}
+
+.lightGoldText{
+    -fx-text-fill: rgb(189, 155, 118);
+}
+
+.lightPurpleText{
+    -fx-text-fill: rgb(255, 0, 228);
+}
+
+.topicPane{
+    -fx-background-color:   #BD9B76; 
+    -fx-background-radius:  0 0 100 0;
+}
+
+.homeBtn
+{
+    -fx-background: transparent;
+    -fx-background-color: transparent
+}
+.homeBtn:hover
+{
+    -fx-background-color : rgb(32, 32, 32, 0.5);
+}
+.homeBtn:pressed
+{
+    -fx-background-color : rgb(32, 32, 32, 0.5);
+}
+
+.partitionPane{
+    -fx-background-color: #bd9b76;
+}
+
+.btn1
+{
+    -fx-background-color : linear-gradient(to bottom right, #CAA45D, #917643);
+    -fx-background-radius :  20 20 20 20;
+}
+.btn1:hover
+{
+    -fx-background-color : #866D3E;
+    -fx-background-radius :  20 20 20 20;
+}
+.btn1:pressed
+{
+    -fx-background-color : #43361F;
+    -fx-background-radius :  20 20 20 20;
+}
+
+.menuBtn
+{
+    -fx-background: transparent;
+    -fx-background-color: transparent
+}
+.menuBtn:hover
+{
+    -fx-background-color : rgb(32, 32, 32, 0.5);
+    -fx-background-radius : 100 0 0 100;
+}
+.menuBtn:pressed
+{
+    -fx-background-color : rgb(32, 32, 32, 0.5);
+    -fx-background-radius : 100 0 0 100;
+}
+
+.adminWorkBtn
+{
+    -fx-background-color : #9C2344;
+    -fx-background-radius : 100 0 0 100;
+}
+
+.officerWorkBtn
+{
+    -fx-background-color : #18626C;
+    -fx-background-radius : 100 0 0 100;
+}
+
+.residentWorkBtn
+{
+    -fx-background-color : #64197E;
+    -fx-background-radius : 100 0 0 100;
+}
+
+.menuPane{
+    -fx-background-color : #112B58;
+}
+
+.vbox{
+    -fx-background-color :  #0B1C3A;
+}
+
+
+/* home */
+.homePane
+{
+    -fx-background-color :  #112B58;
+}
+
+
+/* info */
+.infoPane{
+    -fx-background-color : #112B58;
+}
+
+.showBtn
+{
+    -fx-background-color : linear-gradient(to bottom right, #CAA45D, #917643);
+    -fx-background-radius :  20 20 20 20;
+}
+.showBtn:hover
+{
+    -fx-background-color : #866D3E;
+    -fx-background-radius :  20 20 20 20;
+}
+.showBtn:pressed
+{
+    -fx-background-color : #43361F;
+    -fx-background-radius :  20 20 20 20;
+}
+
+.confirmButton
+{
+    -fx-background-color : linear-gradient(to bottom right, #E6DB28, #30C73E);
+    -fx-background-radius :  20 20 20 20;
+}
+.confirmButton:hover
+{
+    -fx-background-color : linear-gradient(to bottom right, #99921A, #208429);
+    -fx-background-radius :  20 20 20 20;
+}
+.confirmButton:pressed
+{
+    -fx-background-color : #104214 ;
+    -fx-background-radius :  20 20 20 20;
+}
+
+.cancelButton
+{
+    -fx-background-color : linear-gradient(to bottom right, #EC0517, #861C1C);
+    -fx-background-radius :  20 20 20 20;
+}
+.cancelButton:hover
+{
+    -fx-background-color : linear-gradient(to bottom right, #9D030F, #591212);
+    -fx-background-radius :  20 20 20 20;
+}
+.cancelButton:pressed
+{
+    -fx-background-color : #340105 ;
+    -fx-background-radius :  20 20 20 20;
+}
+
+.smallPane{
+    -fx-background-color : #202020
+}
+
+/* home */
+#residentBtn
+{
+    -fx-background-color : linear-gradient(to bottom right, #CAA45D, #917643);
+    -fx-background-radius :  20 20 20 20;
+}
+#residentBtn:hover
+{
+    -fx-background-color : #866D3E;
+    -fx-background-radius :  20 20 20 20;
+}
+#residentBtn:pressed
+{
+    -fx-background-color : #43361F;
+    -fx-background-radius :  20 20 20 20;
+}
+
+#officerBtn
+{
+    -fx-background-color : linear-gradient(to bottom right, #2494A2, #2A4869);
+    -fx-background-radius :  20 20 20 20;
+}
+#officerBtn:hover
+{
+    -fx-background-color : #18626C;
+    -fx-background-radius :  20 20 20 20;
+}
+#officerBtn:pressed
+{
+    -fx-background-color : #0C3136;
+    -fx-background-radius :  20 20 20 20;
+}
+
+#adminBtn
+{
+    -fx-background-color : linear-gradient(to bottom right, #2D3258, #193243);
+    -fx-background-radius :  20 20 20 20;
+}
+#adminBtn:hover
+{
+    -fx-background-color : #1E213A;
+    -fx-background-radius :  20 20 20 20;
+}
+#adminBtn:pressed
+{
+    -fx-background-color : #0F101D;
+    -fx-background-radius :  20 20 20 20;
+}
+
+

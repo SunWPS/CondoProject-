@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="300.0" prefWidth="400.0" styleClass="vbox" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.condo.controllers.residentControllers.ConfirmRegisterContorller">
+   <children>
+      <Label fx:id="confirmLabel" layoutX="41.0" layoutY="53.0" text="ยืนยันการลงทะเบียนหรีอไม่" textFill="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="28.0" />
+         </font>
+      </Label>
+      <Label fx:id="finishLabel" layoutX="93.0" layoutY="53.0" text="ลงทะเบียนเสร็จสิ้น" textFill="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="28.0" />
+         </font>
+      </Label>
+      <Button fx:id="confirmBtn" layoutX="109.0" layoutY="169.0" mnemonicParsing="false" onAction="#handleConfirmBtnOnAction" prefHeight="78.0" prefWidth="184.0" styleClass="confirmButton" text="ยืนยัน" textFill="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="finishBtn" layoutX="109.0" layoutY="169.0" mnemonicParsing="false" onAction="#handleFinishBtnOnAction" prefHeight="78.0" prefWidth="184.0" styleClass="confirmButton" text="กลับไปหน้า Login" textFill="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="20.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

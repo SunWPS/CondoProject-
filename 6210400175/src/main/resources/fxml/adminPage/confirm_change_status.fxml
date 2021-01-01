@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="300" prefWidth="400.0" styleClass="vbox" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.condo.controllers.adminControllers.ConfirmChangeStatusController">
+   <children>
+      <Label layoutX="41.0" layoutY="80.0" text="ยืนยันที่จะเปลี่ยนสถานะหรือไม่" textFill="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="25.0" />
+         </font>
+      </Label>
+      <Button fx:id="confirmBtn" layoutX="120.0" layoutY="169.0" mnemonicParsing="false" onAction="#handleConfirmBtnOnAction" prefHeight="69.0" prefWidth="160.0" styleClass="confirmButton" text="ตกลง" textFill="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="25.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
